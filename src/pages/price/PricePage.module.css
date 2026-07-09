@@ -1,0 +1,183 @@
+.pricePage {
+    --page-width: 1280px;
+    --page-side-padding: 80px;
+    --price-list-width: 846px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #263328;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+
+    width: var(--page-width);
+    height: 400px;
+
+    margin: 11px var(--page-side-padding) 24px;
+    padding: 112px 52px 0;
+
+    border-radius: 5px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.heroSection h2 {
+    margin-bottom: 67px;
+}
+
+.heroSection p {
+    width: 360px;
+
+    color: #F5F3EA;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.priceListSection {
+    width: var(--price-list-width);
+
+    text-align: center;
+}
+
+.priceListSection h3 {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.priceList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.priceItem {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    align-items: center;
+    gap: 24px;
+
+    width: 100%;
+    min-height: 90px;
+
+    padding: 18px 21px 18px 26px;
+
+    border-radius: 5px;
+    background-color: rgba(221, 235, 237, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.priceItem h4 {
+    color: #173536;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: left;
+}
+
+.brandsList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    color: #263328;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 112%;
+    text-align: right;
+}
+
+.brandsList span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 1050px) {
+    .pricePage {
+        --page-width: calc(100% - 32px);
+        --page-side-padding: 16px;
+        --price-list-width: min(846px, calc(100% - 32px));
+    }
+
+    .heroSection,
+    .priceListSection {
+        width: var(--page-width);
+    }
+
+    .priceListSection {
+        max-width: 846px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        height: 360px;
+        padding: 72px 32px 0;
+    }
+
+    .heroSection h2 {
+        margin-bottom: 42px;
+        font-size: 52px;
+    }
+
+    .heroSection p {
+        width: 330px;
+        font-size: 22px;
+    }
+
+    .priceItem {
+        grid-template-columns: 1fr;
+        gap: 14px;
+
+        padding: 22px;
+    }
+
+    .priceItem h4,
+    .brandsList {
+        text-align: left;
+    }
+
+    .brandsList {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroSection {
+        height: 320px;
+        padding: 48px 20px 0;
+    }
+
+    .heroSection h2 {
+        font-size: 42px;
+    }
+
+    .heroSection p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .priceListSection h3 {
+        font-size: 22px;
+    }
+
+    .priceItem h4,
+    .brandsList {
+        font-size: 18px;
+    }
+}

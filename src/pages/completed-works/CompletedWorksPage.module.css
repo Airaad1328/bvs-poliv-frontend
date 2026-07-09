@@ -1,0 +1,214 @@
+.completedWorksPage {
+    --page-width: 1280px;
+    --page-side-padding: 80px;
+    --gallery-gap: 24px;
+    --gallery-row-gap: 18px;
+    --gallery-row-height: 309px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #263328;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+
+    width: var(--page-width);
+    height: 400px;
+
+    margin: 11px var(--page-side-padding) 18px;
+    padding: 72px 52px 0;
+
+    border-radius: 5px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.heroSection h2 {
+    width: 440px;
+    margin-bottom: 60px;
+}
+
+.heroSection p {
+    width: 460px;
+
+    color: #F5F3EA;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.gallerySection {
+    width: var(--page-width);
+}
+
+.galleryList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gallery-row-gap) var(--gallery-gap);
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.galleryItem {
+    height: var(--gallery-row-height);
+
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.galleryItemWide {
+    grid-column: span 2;
+}
+
+.galleryItem img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.consultationSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: var(--page-width);
+    min-height: 140px;
+
+    margin-top: 16px;
+    padding: 31px 26px 31px 31px;
+
+    border-radius: 5px;
+    background-color: rgba(221, 235, 237, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.consultationText {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.consultationText h3 {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.consultationText p {
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.consultationButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 365px;
+    height: 90px;
+
+    border-radius: 5px;
+    background-color: #173536;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+
+    color: #F5F3EA;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+@media (max-width: 1350px) {
+    .completedWorksPage {
+        --page-width: calc(100% - 32px);
+        --page-side-padding: 16px;
+        --gallery-row-height: 280px;
+    }
+
+    .heroSection,
+    .gallerySection,
+    .consultationSection {
+        width: var(--page-width);
+    }
+}
+
+@media (max-width: 900px) {
+    .completedWorksPage {
+        --gallery-row-height: 260px;
+    }
+
+    .heroSection {
+        height: 360px;
+        padding: 72px 32px 0;
+    }
+
+    .heroSection h2 {
+        width: 360px;
+        margin-bottom: 42px;
+        font-size: 52px;
+    }
+
+    .heroSection p {
+        width: 360px;
+        font-size: 20px;
+    }
+
+    .galleryList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galleryItemWide {
+        grid-column: span 2;
+    }
+
+    .consultationSection {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 560px) {
+    .completedWorksPage {
+        --gallery-row-height: 230px;
+    }
+
+    .heroSection {
+        height: 320px;
+        padding: 48px 20px 0;
+    }
+
+    .heroSection h2 {
+        width: 260px;
+        font-size: 42px;
+    }
+
+    .heroSection p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .galleryList {
+        grid-template-columns: 1fr;
+    }
+
+    .galleryItemWide {
+        grid-column: auto;
+    }
+
+    .consultationButton {
+        width: 100%;
+        font-size: 20px;
+    }
+}

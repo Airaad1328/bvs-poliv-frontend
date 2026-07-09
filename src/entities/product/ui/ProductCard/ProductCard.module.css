@@ -1,0 +1,109 @@
+.productCard {
+    width: 100%;
+}
+
+.productLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+
+    width: 100%;
+}
+
+.productPreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 270px;
+
+    padding: 18px 18px 16px;
+
+    border-radius: 5px;
+    background-color: rgba(221, 235, 237, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 210px;
+}
+
+.imageWrapper img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+.productPreview h4 {
+    color: #173536;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    text-align: center;
+}
+
+.priceBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-width: 142px;
+    height: 46px;
+
+    padding: 7px 14px;
+
+    border-radius: 5px;
+    background-color: rgba(221, 235, 237, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.priceBadge img {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+
+    object-fit: contain;
+}
+
+.priceBadge span {
+    color: #263328;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+.productLink:hover .productPreview,
+.productLink:focus-visible .productPreview {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.22);
+}
+
+.productLink:focus-visible {
+    outline: 2px solid #5F8F9A;
+    outline-offset: 4px;
+    border-radius: 5px;
+}
+
+@media (max-width: 680px) {
+    .productPreview {
+        height: 250px;
+    }
+}

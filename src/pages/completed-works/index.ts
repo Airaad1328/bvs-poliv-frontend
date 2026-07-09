@@ -1,0 +1,1 @@
+export { CompletedWorksPage } from "./CompletedWorksPage";

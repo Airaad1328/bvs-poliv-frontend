@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstSectionImage {
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 64px 74px 52px;
+
+    margin: 11px 80px 18px;
+
+    background-image: linear-gradient(
+      90deg,
+      rgb(19, 40, 41, 0.6) 0,
+      rgb(19, 40, 41, 0) 100%
+    ),url('./../../assets/poliv-main-image.png');
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 1280px;
+
+    height: 400px;
+
+    border-radius: 5px;
+}
+
+.firstSectionImage  h2 {
+    width: 489px;
+    height: 150px;
+}
+
+.firstSectionImage  p {
+
+    margin-top: 40px;
+
+    width: 475px;
+    height: 72px;
+
+    color: #F5F3EA;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.secondSection {  
+    
+    display: flex;
+    
+    gap:24px;
+
+    width: 1280px;
+    height: 226px;
+
+    margin: 18px 80px ;
+}
+
+.secondSection div {
+    width: 628px;
+}
+
+.secondSection img {
+    width: 628px;
+    height: 226px;
+
+    border-radius: 5px;
+}
+
+.secondSection h3 {
+    margin-bottom: 15px;
+}
+
+/*Third section*/
+
+.thirdSection {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+    
+    width: 100%;
+    height: 456px;
+
+    padding: 25px 80px 25px;
+
+    background-color: rgba(95, 143, 154, 0.5);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.thirdSection p {
+    text-align:justify;
+}
+
+.thirdSectionListContaier {
+    width: 1280px;
+    height: 142px;
+
+    margin-top: 25px;
+    margin-bottom: 29px;
+}
+
+.thirdSectionList {
+    list-style: none;
+    display: flex;
+    gap:20px
+}
+
+.thirdSectionListItem {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    width: 302px;
+    height: 142px;
+
+    background-color: #DDEBED;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 5px;
+}
+
+.thirdSectionListItem img {
+    width: 70px;
+    height: 70px;
+}
+
+.thirdSectionListItem p {
+    font-weight: 500;
+}
+
+.fourthSection {
+
+    display: flex;
+    
+    width: 1280px;
+    height: 564px;
+
+    margin: 18px 80px 30px;
+}
+
+.fourthSectionLeft {
+
+    display: flex;
+    flex-direction: column;
+
+    gap:18px;
+
+    width: 781px;
+    height: 564px;
+}
+
+.fourthSectionListContainer {
+
+    width: 773px;
+    height: 200px;
+
+}
+
+.fourthSectionList {
+    display: grid;
+    
+    grid-template-columns: repeat( 2 , 1fr );
+
+    gap: 0 25px;
+}
+
+.fourthSectionListItem {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.fourthSectionListItem img {
+    width: 50px;
+    height: 50px;
+}
+
+.hunterFourthSectionImage {
+    height: 493px;
+    width: 493px;
+}
+
+/*Five section*/
+
+.fiveSection {
+
+    display: flex;
+    gap: 24px;
+
+    width: 1280px;
+    height: 268px;
+
+    margin: 0 80px 18px;
+}
+
+.fiveSectionText {
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: right;
+
+    gap: 19px;
+
+    width: 737px;
+    height: 226px;
+}
+
+/*Sixth sextion*/
+
+.sixthSection {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:30px;
+
+    width: 100%;
+    height: 583px;
+
+    background-color: rgba(95, 143, 154, 0.5);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 5px;
+
+    padding: 30px 80px;
+}
+
+.sixthSectionChildFirst {
+    display: flex;
+    gap:37px;
+}
+
+.sixthSectionLeft {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 21px;
+
+    width: 841px;
+    height: 209px;
+}
+
+.sixthSectionLeft section {
+    display: flex;
+
+}
+
+.sixthSectionListContainer {
+    width: 388px;
+    height: 150px;
+}
+
+.sixthSectionList {
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr );
+
+    gap: 10px 9px;
+}
+
+.sixthSectionListItem {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    height: 60px;
+    width: 194px;
+}
+
+.sixthSectionListItem p {
+    font-size: 16px;
+}
+
+.listItemCicle {
+    
+    display: flex;
+
+    position: absolute;
+    left: -20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    padding-left: 43px;
+
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background-color: #AAC1C2;
+
+    align-items: center;
+
+    font-size: 24px;
+    font-family: "Inter",sans-serif;
+    color:rgba(23, 53, 54, 1);
+}
+
+.listItemTextContainer {
+
+    display: flex;
+
+    height: 60px;
+    width: 170px;
+
+    align-items: center;
+    padding-left: 72px;
+
+    background-color: rgba(221, 235, 237, 1);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 5px;
+}
+
+.sixthSextionSoplaImage {
+    width: 393px;
+    height: 215px;
+}
+
+.sixthSectionChildSecond {
+    display: flex;
+    gap:65px;
+}
+
+.sixthSectionChildSecond img {
+    width: 432px;
+    height: 278px;
+}
+
+/*Seventh section*/
+
+.seventhSection {
+
+    display: flex;
+    flex-direction: column;
+
+    gap:25px;
+
+    width: 1280px;
+    height: 332px;
+
+    margin: 25px 80px 0;
+
+    align-items: center;
+}
+
+.seventhSectionList {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 24px 18px
+}
+
+.sevenSectionListItem {
+
+    display: flex;
+
+    width: 411px;
+    height: 92px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-color: rgba(221, 235, 237, 0.3);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 5px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.seventhSectionEndingText {
+    text-align: center;
+    font-weight: 400;
+}

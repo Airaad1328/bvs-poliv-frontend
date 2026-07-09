@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+header {
+  margin: 0 auto;
+
+  padding: 0 80px;
+
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--header-bg);
+  color: var(--header-text);
+
+  position: var(--header-position, relative);
+  top: var(--header-top, auto);
+  left: var(--header-left, auto);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 80px;
+  
+}
+
+.home {
+
+  backdrop-filter: blur(5px);
+  background: rgba(221, 235, 237, 0.3);
+  --header-text: #F5F3EA;
+  --header-position: absolute;
+  --header-top: 0;
+  --header-left: 0;
+}
+
+.default {
+  --header-bg: rgba(95, 143, 154, 0.5);
+  --header-text: #173536;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.logoLink {
+  font-size: 24px;
+  font-style: bold;
+  font-family: "Manrope" ,sans-serif;
+  font-weight: 700;
+
+  width: fit-content;
+
+}
+
+.inputContainer {
+
+  padding-left: 7px;
+  padding-right: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 193px;
+  height: 30px;
+  
+  border-radius: 5px;
+
+  background-color: #DDEBED;
+
+  
+}
+
+.inputContainer input {
+  width: 160px;;  
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .nav {
+    gap: 12px;
+    font-size: 14px;
+  }
+}
