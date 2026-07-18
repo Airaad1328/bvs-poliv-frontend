@@ -239,7 +239,7 @@ header {
     padding-top: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     header {
       gap:20px;

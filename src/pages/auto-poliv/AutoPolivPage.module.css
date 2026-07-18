@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
 
 .mainSection {
+    --page-width: 1280px;
+    --page-side-padding: 80px;
+
     display: flex;
     flex-direction: column;
 
     justify-content:center;
     align-items:center;
+
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .firstSectionImage {
@@ -15,7 +21,7 @@
 
     padding: 64px 74px 52px;
 
-    margin: 11px 80px 18px;
+    margin: 11px var(--page-side-padding) 18px;
 
     background-image: linear-gradient(
       90deg,
@@ -28,7 +34,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    width: 1280px;
+    width: var(--page-width);
 
     height: 400px;
 
@@ -37,7 +43,8 @@
 
 .firstSectionImage  h2 {
     width: 489px;
-    height: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 .firstSectionImage  p {
@@ -45,11 +52,13 @@
     margin-top: 40px;
 
     width: 475px;
-    height: 72px;
+    max-width: 100%;
+    height: auto;
 
     color: #F5F3EA;
     font-size: 24px;
     font-weight: 400;
+    line-height: 120%;
 }
 
 .secondSection {  
@@ -58,10 +67,10 @@
     
     gap:24px;
 
-    width: 1280px;
-    height: 226px;
+    width: var(--page-width);
+    height: auto;
 
-    margin: 18px 80px ;
+    margin: 18px var(--page-side-padding);
 }
 
 .secondSection div {
@@ -73,6 +82,7 @@
     height: 226px;
 
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .secondSection h3 {
@@ -90,9 +100,10 @@
     flex-direction: column;
     
     width: 100%;
-    height: 456px;
+    height: auto;
+    min-height: 456px;
 
-    padding: 25px 80px 25px;
+    padding: 25px var(--page-side-padding);
 
     background-color: rgba(95, 143, 154, 0.5);
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
@@ -101,11 +112,12 @@
 
 .thirdSection p {
     text-align:justify;
+    max-width: var(--page-width);
 }
 
 .thirdSectionListContaier {
-    width: 1280px;
-    height: 142px;
+    width: var(--page-width);
+    height: auto;
 
     margin-top: 25px;
     margin-bottom: 29px;
@@ -114,7 +126,8 @@
 .thirdSectionList {
     list-style: none;
     display: flex;
-    gap:20px
+    gap:20px;
+    padding: 0;
 }
 
 .thirdSectionListItem {
@@ -150,10 +163,10 @@
 
     display: flex;
     
-    width: 1280px;
-    height: 564px;
+    width: var(--page-width);
+    height: auto;
 
-    margin: 18px 80px 30px;
+    margin: 18px var(--page-side-padding) 30px;
 }
 
 .fourthSectionLeft {
@@ -164,13 +177,13 @@
     gap:18px;
 
     width: 781px;
-    height: 564px;
+    height: auto;
 }
 
 .fourthSectionListContainer {
 
     width: 773px;
-    height: 200px;
+    height: auto;
 
 }
 
@@ -180,6 +193,7 @@
     grid-template-columns: repeat( 2 , 1fr );
 
     gap: 0 25px;
+    padding: 0;
 }
 
 .fourthSectionListItem {
@@ -198,6 +212,8 @@
 .hunterFourthSectionImage {
     height: 493px;
     width: 493px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /*Five section*/
@@ -207,10 +223,17 @@
     display: flex;
     gap: 24px;
 
-    width: 1280px;
-    height: 268px;
+    width: var(--page-width);
+    height: auto;
 
-    margin: 0 80px 18px;
+    margin: 0 var(--page-side-padding) 18px;
+}
+
+.fiveSection img {
+    width: 519px;
+    height: 268px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .fiveSectionText {
@@ -224,7 +247,7 @@
     gap: 19px;
 
     width: 737px;
-    height: 226px;
+    height: auto;
 }
 
 /*Sixth sextion*/
@@ -238,14 +261,15 @@
     gap:30px;
 
     width: 100%;
-    height: 583px;
+    height: auto;
+    min-height: 583px;
 
     background-color: rgba(95, 143, 154, 0.5);
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
 
     border-radius: 5px;
 
-    padding: 30px 80px;
+    padding: 30px var(--page-side-padding);
 }
 
 .sixthSectionChildFirst {
@@ -262,7 +286,7 @@
     gap: 21px;
 
     width: 841px;
-    height: 209px;
+    height: auto;
 }
 
 .sixthSectionLeft section {
@@ -272,7 +296,7 @@
 
 .sixthSectionListContainer {
     width: 388px;
-    height: 150px;
+    height: auto;
 }
 
 .sixthSectionList {
@@ -280,6 +304,7 @@
     grid-template-columns: repeat( 2 , 1fr );
 
     gap: 10px 9px;
+    padding: 0;
 }
 
 .sixthSectionListItem {
@@ -344,6 +369,8 @@
 .sixthSextionSoplaImage {
     width: 393px;
     height: 215px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .sixthSectionChildSecond {
@@ -354,6 +381,8 @@
 .sixthSectionChildSecond img {
     width: 432px;
     height: 278px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /*Seventh section*/
@@ -365,10 +394,10 @@
 
     gap:25px;
 
-    width: 1280px;
-    height: 332px;
+    width: var(--page-width);
+    height: auto;
 
-    margin: 25px 80px 0;
+    margin: 25px var(--page-side-padding) 0;
 
     align-items: center;
 }
@@ -378,7 +407,8 @@
 
     grid-template-columns: repeat(3,1fr);
 
-    gap: 24px 18px
+    gap: 24px 18px;
+    padding: 0;
 }
 
 .sevenSectionListItem {
@@ -404,4 +434,345 @@
 .seventhSectionEndingText {
     text-align: center;
     font-weight: 400;
+}
+
+@media (max-width: 1350px) {
+    .mainSection {
+        --page-width: calc(100% - 32px);
+        --page-side-padding: 16px;
+    }
+
+    .secondSection {
+        align-items: stretch;
+    }
+
+    .secondSection div,
+    .secondSection img {
+        flex: 1;
+        width: 50%;
+    }
+
+    .thirdSectionList {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .thirdSectionListItem {
+        width: 100%;
+    }
+
+    .fourthSection {
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .fourthSectionLeft {
+        flex: 1;
+        width: auto;
+    }
+
+    .fourthSectionListContainer {
+        width: 100%;
+    }
+
+    .hunterFourthSectionImage {
+        width: min(38%, 493px);
+        height: 493px;
+    }
+
+    .fiveSectionText {
+        flex: 1;
+        width: auto;
+    }
+
+    .fiveSection img {
+        width: min(40%, 519px);
+    }
+
+    .sixthSectionChildFirst,
+    .sixthSectionChildSecond {
+        gap: 24px;
+    }
+
+    .sixthSectionLeft {
+        flex: 1;
+        width: auto;
+    }
+
+    .sixthSectionLeft section {
+        gap: 24px;
+    }
+
+    .sixthSectionChildSecond div {
+        flex: 1;
+    }
+
+    .sevenSectionListItem {
+        width: 100%;
+        min-height: 92px;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .firstSectionImage {
+        height: 360px;
+        padding: 72px 32px 44px;
+    }
+
+    .firstSectionImage h2 {
+        width: 420px;
+        font-size: 52px;
+    }
+
+    .firstSectionImage p {
+        width: 420px;
+        margin-top: 34px;
+        font-size: 20px;
+    }
+
+    .secondSection,
+    .fourthSection,
+    .fiveSection,
+    .sixthSectionChildFirst,
+    .sixthSectionChildSecond {
+        flex-direction: column;
+    }
+
+    .secondSection div,
+    .secondSection img,
+    .hunterFourthSectionImage,
+    .fiveSection img,
+    .fiveSectionText,
+    .sixthSextionSoplaImage,
+    .sixthSectionChildSecond img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .secondSection img {
+        height: 320px;
+    }
+
+    .thirdSection {
+        min-height: 0;
+        padding-block: 30px;
+    }
+
+    .thirdSectionList {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fourthSectionList {
+        gap: 12px 20px;
+    }
+
+    .hunterFourthSectionImage {
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .fiveSectionText {
+        text-align: left;
+    }
+
+    .fiveSection img {
+        height: 300px;
+        display:none;
+    }
+
+    .sixthSection {
+        min-height: 0;
+        gap: 28px;
+        padding-block: 32px;
+    }
+
+    .sixthSectionLeft section {
+        flex-direction: column;
+    }
+
+    .sixthSectionListContainer {
+        width: 100%;
+    }
+
+    .sixthSectionList {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sixthSectionListItem {
+        width: 100%;
+    }
+
+    .listItemTextContainer {
+        width: 100%;
+    }
+
+    .sixthSextionSoplaImage {
+        height: 320px;
+    }
+
+    .sixthSectionChildSecond img {
+        height: 360px;
+    }
+
+    .seventhSectionList {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .mainSection {
+        --page-width: calc(100% - 24px);
+        --page-side-padding: 12px;
+    }
+
+    .firstSectionImage {
+        height: 320px;
+        padding: 48px 20px 34px;
+        background-position: 58% center;
+    }
+
+    .firstSectionImage h2 {
+        width: 100%;
+        font-size: 42px;
+        line-height: 105%;
+    }
+
+    .firstSectionImage p {
+        width: 100%;
+        margin-top: 28px;
+        font-size: 18px;
+    }
+
+    .secondSection {
+        gap: 18px;
+        margin-block: 18px;
+    }
+
+    .secondSection img {
+        height: 230px;
+    }
+
+    .secondSection p,
+    .thirdSection p,
+    .fourthSection p,
+    .fiveSectionText p,
+    .sixthSection p,
+    .seventhSectionEndingText {
+        font-size: 17px;
+        line-height: 125%;
+        text-align: left;
+    }
+
+    .secondSection h3,
+    .thirdSection h3,
+    .fourthSection h3,
+    .fiveSectionText h3,
+    .sixthSection h3,
+    .seventhSection h3 {
+        font-size: 22px;
+        line-height: 115%;
+    }
+
+    .thirdSectionList {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .thirdSectionListItem {
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+        min-height: 86px;
+        padding: 12px 18px;
+    }
+
+    .thirdSectionListItem img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .thirdSectionListItem p {
+        text-align: left;
+    }
+
+    .fourthSection {
+        margin-block: 18px 24px;
+    }
+
+    .fourthSectionList {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .fourthSectionListItem img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hunterFourthSectionImage {
+        height: 300px;
+    }
+
+    .fiveSection {
+        gap: 18px;
+    }
+
+    .fiveSection img {
+        height: 230px;
+    }
+
+    .sixthSection {
+        padding-block: 28px;
+    }
+
+    .sixthSectionChildFirst,
+    .sixthSectionChildSecond {
+        gap: 18px;
+    }
+
+    .sixthSectionList {
+        grid-template-columns: 1fr;
+    }
+
+    .sixthSectionListItem {
+        height: 56px;
+    }
+
+    .sixthSectionListItem p {
+        font-size: 15px;
+    }
+
+    .listItemCicle {
+        left: -14px;
+        width: 68px;
+        height: 68px;
+        padding-left: 34px;
+        font-size: 20px;
+    }
+
+    .listItemTextContainer {
+        height: 56px;
+        padding-left: 66px;
+    }
+
+    .sixthSextionSoplaImage,
+    .sixthSectionChildSecond img {
+        height: 260px;
+    }
+
+    .seventhSection {
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .seventhSectionList {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .sevenSectionListItem {
+        min-height: 82px;
+        padding: 16px 18px;
+    }
 }

@@ -349,7 +349,7 @@
     .heroSection {
         height: 360px;
         padding: 72px 32px 0;
-        background-position: center;
+        background-position: 84% center;
     }
 
     .heroSection h2 {
@@ -364,7 +364,7 @@
 
     .mainEquipmentList,
     .additionalEquipmentList {
-        grid-template-columns: repeat(2, 196px);
+        grid-template-columns: repeat(3, 196px);
     }
 
     .advantagesSection {

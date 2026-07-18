@@ -144,7 +144,7 @@ export function AutoPolivPage () {
                 <div className={styles.thirdSectionListContaier}>
                     <ol className={styles.thirdSectionList}>
                         { firstList.map((step) => (
-                            <li className = {styles.thirdSectionListItem}>
+                            <li className = {styles.thirdSectionListItem} key={step.id}>
                                 <img src={step.icon} alt={step.title}></img>
                                 <p> {step.title} </p>                               
                             </li>
@@ -174,7 +174,7 @@ export function AutoPolivPage () {
                     <div className = { styles.fourthSectionListContainer }>
                         <ol className = { styles.fourthSectionList }>
                             { secondList.map((step) => (
-                                <li className = {styles.fourthSectionListItem}> 
+                                <li className = {styles.fourthSectionListItem} key={step.id}> 
                                     <img src={step.icon} />
                                     <p>{step.title}</p>
                                 </li>
@@ -230,7 +230,7 @@ export function AutoPolivPage () {
                             <div className = {styles.sixthSectionListContainer}>
                                 <ol className={styles.sixthSectionList}>
                                     { thirdList.map((step) => (
-                                        <li className={styles.sixthSectionListItem}>
+                                        <li className={styles.sixthSectionListItem} key={step.id}>
                                             <span className={styles.listItemCicle}>{step.id}</span>
                                             <span className={styles.listItemTextContainer}>
                                                 <p>{step.title}</p>
