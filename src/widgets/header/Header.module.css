@@ -239,6 +239,31 @@ header {
     padding-top: 32px;
 }
 
+@media (max-width: 1300px) {
+    header {
+        gap:5px;
+        padding: 0 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        gap:5px;
+        padding: 0 10px;
+    }
+
+    .nav {
+        gap:8px;
+    }
+
+    .inputContainer {
+      width: 135px;
+    }
+    .inputContainer input {
+      width: 100px;
+    }
+}
+
 @media (max-width: 900px) {
 
     header {

@@ -48,11 +48,7 @@ export function ContactsPage() {
     return (
         <main className={styles.contactsPage}>
             <section
-                className={styles.heroSection}
-                style={{
-                    backgroundImage: `linear-gradient(90deg, rgba(19, 40, 41, 0.68) 0%, rgba(19, 40, 41, 0.42) 36%, rgba(19, 40, 41, 0) 70%), url(${contactHeroImage})`,
-                }}
-            >
+                className={styles.heroSection}>
                 <h2>Контакти</h2>
                 <p>
                     Ми завжди на зв’язку — допоможемо з вибором, прорахунком і монтажем систем автоматичного поливу.
