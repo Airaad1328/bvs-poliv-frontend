@@ -21,6 +21,8 @@
 
     border-radius: 5px;
 
+    background-image: linear-gradient(90deg, rgba(19, 40, 41, 0.68) 0%, rgba(19, 40, 41, 0.42) 36%, rgba(19, 40, 41, 0) 70%), url("/src/assets/contacts-page/contact-hero.jpg");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -116,7 +118,7 @@
 
 .mapWrapper {
     width: 100%;
-    height: 461px;
+    height: 520px;
 
     overflow: hidden;
     border-radius: 5px;
@@ -138,10 +140,16 @@
         --page-side-padding: 16px;
     }
 
-    .heroSection,
     .contactsSection {
         width: var(--page-width);
     }
+
+    .heroSection {
+        width: var(--page-width);
+        background-position: center 30%;
+    }
+
+
 }
 
 @media (max-width: 900px) {
