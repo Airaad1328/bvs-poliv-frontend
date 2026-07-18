@@ -151,6 +151,7 @@
     .heroSection {
         height: 360px;
         padding: 72px 32px 0;
+        background-position: 64% center;
     }
 
     .heroSection h2 {
