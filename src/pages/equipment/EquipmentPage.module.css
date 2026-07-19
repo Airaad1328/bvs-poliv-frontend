@@ -313,6 +313,18 @@
     font-size: 24px;
 }
 
+.catalogButton:active {
+    color:rgba(245, 243, 234, 1);
+    background-color: rgba(80, 102, 84, 1);
+    box-shadow: inset 0px 8px 8px rgba(0, 0, 0,0.4);
+}
+
+.consultationButton:active {
+    color:rgba(245, 243, 234, 1);
+    background-color: rgba(80, 102, 84, 1);
+    box-shadow: inset 0px 8px 8px rgba(0, 0, 0,0.4);
+}
+
 @media (max-width: 1350px) {
     .equipmentPage {
         --page-width: calc(100% - 32px);
@@ -349,7 +361,7 @@
     .heroSection {
         height: 360px;
         padding: 72px 32px 0;
-        background-position: 84% center;
+        background-position: 76% center;
     }
 
     .heroSection h2 {

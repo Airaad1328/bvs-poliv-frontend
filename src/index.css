@@ -13,6 +13,20 @@ body {
     user-select: none;
 }
 
+.site-search-highlight {
+    animation: site-search-highlight 3s ease-out;
+    border-radius: 4px;
+}
+
+@keyframes site-search-highlight {
+    0%, 55% { background-color: rgba(255, 215, 64, 0.8); box-shadow: 0 0 0 6px rgba(255, 215, 64, 0.35); }
+    100% { background-color: transparent; box-shadow: 0 0 0 0 transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-search-highlight { animation-duration: 1.5s; }
+}
+
 ol {
     list-style: none;
     padding-inline-start: 0;
@@ -81,4 +95,3 @@ h4 {
 
     color: #263328;
 }
-
