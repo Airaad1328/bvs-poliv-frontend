@@ -24,7 +24,7 @@
     background-image: linear-gradient(90deg, rgba(19, 40, 41, 0.68) 0%, rgba(19, 40, 41, 0.42) 36%, rgba(19, 40, 41, 0) 70%), url("/src/assets/contacts-page/contact-hero.jpg");
 
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
     background-size: cover;
 }
 

@@ -11,6 +11,7 @@ import { CatalogPage } from '@/pages/catalog';
 import { ProductPage } from '@/pages/product';
 
 import { ScrollToTop } from './ScrollToTop';
+import { SearchTarget } from '@/features/site-search/SearchTarget';
 
 import { DefaultLayout } from "@/widgets/layouts/default-layout";
 import { HomeLayout } from "@/widgets/layouts/home-layout";
@@ -19,6 +20,7 @@ export function AppRouter() {
     return (
         <BrowserRouter>
             <ScrollToTop />
+            <SearchTarget />
             <Routes>
                 <Route element={ <HomeLayout/> } > 
                     <Route path="/home" element={ <HomePage /> }/>
