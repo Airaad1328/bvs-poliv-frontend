@@ -1,22 +1,22 @@
 import styles from './CompletedWorksPage.module.css';
 
-import completedHeroImage from '@/assets/completed-works-page/completed-hero.png';
+import completedHeroImage from '@/assets/completed-works-page/completed-hero.webp';
 
-import workSprinklerLawnImage from '@/assets/completed-works-page/work-sprinkler-lawn.png';
-import workSprinklerGardenImage from '@/assets/completed-works-page/work-sprinkler-garden.png';
-import workPondConstructionImage from '@/assets/completed-works-page/work-pond-construction.png';
-import workLawnMowingWideImage from '@/assets/completed-works-page/work-lawn-mowing-wide.png';
-import workLandscapePathImage from '@/assets/completed-works-page/work-landscape-path.png';
-import workGardenRocksImage from '@/assets/completed-works-page/work-garden-rocks.png';
-import workRainbowYardImage from '@/assets/completed-works-page/work-rainbow-yard.png';
-import workCommercialIrrigationImage from '@/assets/completed-works-page/work-commercial-irrigation.png';
-import workSprinklerCloseWideImage from '@/assets/completed-works-page/work-sprinkler-close-wide.png';
-import workSprinklerFlowerbedImage from '@/assets/completed-works-page/work-sprinkler-flowerbed.png';
-import workLawnRollsImage from '@/assets/completed-works-page/work-lawn-rolls.png';
-import workPondWaterfallImage from '@/assets/completed-works-page/work-pond-waterfall.png';
-import workPondFountainImage from '@/assets/completed-works-page/work-pond-fountain.png';
-import workGardenWalkwayWideImage from '@/assets/completed-works-page/work-garden-walkway-wide.png';
-import workTrenchPipesImage from '@/assets/completed-works-page/work-trench-pipes.png';
+import workSprinklerLawnImage from '@/assets/completed-works-page/work-sprinkler-lawn.webp';
+import workSprinklerGardenImage from '@/assets/completed-works-page/work-sprinkler-garden.webp';
+import workPondConstructionImage from '@/assets/completed-works-page/work-pond-construction.webp';
+import workLawnMowingWideImage from '@/assets/completed-works-page/work-lawn-mowing-wide.webp';
+import workLandscapePathImage from '@/assets/completed-works-page/work-landscape-path.webp';
+import workGardenRocksImage from '@/assets/completed-works-page/work-garden-rocks.webp';
+import workRainbowYardImage from '@/assets/completed-works-page/work-rainbow-yard.webp';
+import workCommercialIrrigationImage from '@/assets/completed-works-page/work-commercial-irrigation.webp';
+import workSprinklerCloseWideImage from '@/assets/completed-works-page/work-sprinkler-close-wide.webp';
+import workSprinklerFlowerbedImage from '@/assets/completed-works-page/work-sprinkler-flowerbed.webp';
+import workLawnRollsImage from '@/assets/completed-works-page/work-lawn-rolls.webp';
+import workPondWaterfallImage from '@/assets/completed-works-page/work-pond-waterfall.webp';
+import workPondFountainImage from '@/assets/completed-works-page/work-pond-fountain.webp';
+import workGardenWalkwayWideImage from '@/assets/completed-works-page/work-garden-walkway-wide.webp';
+import workTrenchPipesImage from '@/assets/completed-works-page/work-trench-pipes.webp';
 
 const works = [
     {

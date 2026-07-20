@@ -1,19 +1,19 @@
 import './HomePage.css';
 
-import markerImage from '@/assets/marker_icon.png';
-import firstHomeImage from '@/assets/first-home-image.png';
-import diplomaIcon from '@/assets/diploma_icon.png';
-import handIcon from '@/assets/hand_icon.png';
-import bookmarkIcon from '@/assets/bookmark_icon.png';
-import puzzleIcon from '@/assets/puzzle_icon.png';
-import treePoliv from '@/assets/poliv_tree.jpg';
-import matzerplasLogo from '@/assets/matzerplas_logo.png';
-import hunterLogo from '@/assets/hunter_logo.png';
-import checkIcon from '@/assets/check_icon.png';
-import truckIcon from '@/assets/truck_icon.png';
-import editIcon from '@/assets/edit_icon.png';
-import wandIcon from '@/assets/wand_icon.png';
-import logoutIcon from '@/assets/logout_icon.png';
+import markerImage from '@/assets/marker_icon.webp';
+import firstHomeImage from '@/assets/first-home-image.webp';
+import diplomaIcon from '@/assets/diploma_icon.webp';
+import handIcon from '@/assets/hand_icon.webp';
+import bookmarkIcon from '@/assets/bookmark_icon.webp';
+import puzzleIcon from '@/assets/puzzle_icon.webp';
+import treePoliv from '@/assets/poliv_tree.webp';
+import matzerplasLogo from '@/assets/matzerplas_logo.webp';
+import hunterLogo from '@/assets/hunter_logo.webp';
+import checkIcon from '@/assets/check_icon.webp';
+import truckIcon from '@/assets/truck_icon.webp';
+import editIcon from '@/assets/edit_icon.webp';
+import wandIcon from '@/assets/wand_icon.webp';
+import logoutIcon from '@/assets/logout_icon.webp';
 
 const fiveMainListSteps = [
     {

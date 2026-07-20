@@ -1,15 +1,15 @@
 import styles from './AutoPolivPage.module.css';
 
-import polivSecondImage from '@/assets/poliv-second-image.jpg';
-import dropIcon from '@/assets/poliv-page/drop_icon.png';
-import plumbingIcon from '@/assets/poliv-page/plumbing_icon.png';
-import wrenchIcon from '@/assets/poliv-page/wrench_icon.png';
-import sprinlkerIcon from '@/assets/poliv-page/sprinker_icon.png';
-import arrowRightIcon from '@/assets/poliv-page/arrow_right_icon.png'
-import hunterFourthSectionImage from '@/assets/poliv-page/hunterFourthSectionImage.png';
-import fiveSectionImage from '@/assets/poliv-page/five_section_image.png';
-import sixthSextionSoplaImage from '@/assets/poliv-page/sopla_image.png';
-import sixSectionImage from '@/assets/poliv-page/six_section_image.png';
+import polivSecondImage from '@/assets/poliv-second-image.webp';
+import dropIcon from '@/assets/poliv-page/drop_icon.webp';
+import plumbingIcon from '@/assets/poliv-page/plumbing_icon.webp';
+import wrenchIcon from '@/assets/poliv-page/wrench_icon.webp';
+import sprinlkerIcon from '@/assets/poliv-page/sprinker_icon.webp';
+import arrowRightIcon from '@/assets/poliv-page/arrow_right_icon.webp'
+import hunterFourthSectionImage from '@/assets/poliv-page/hunterFourthSectionImage.webp';
+import fiveSectionImage from '@/assets/poliv-page/five_section_image.webp';
+import sixthSextionSoplaImage from '@/assets/poliv-page/sopla_image.webp';
+import sixSectionImage from '@/assets/poliv-page/six_section_image.webp';
 
 const firstList = [
     {

@@ -1,6 +1,6 @@
 import styles from './PricePage.module.css';
 
-import priceHeroImage from '@/assets/price-page/price-hero.png';
+import priceHeroImage from '@/assets/price-page/price-hero.webp';
 
 const priceItems = [
     {

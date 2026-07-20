@@ -2,25 +2,25 @@ import styles from './EquipmentPage.module.css';
 
 import { Link } from 'react-router';
 
-import heroImage from '@/assets/equipment-page/equipment-hero.png';
+import heroImage from '@/assets/equipment-page/equipment-hero.webp';
 
-import hunterEquipmentImage from '@/assets/equipment-page/equipment-hunter.png';
-import pedrolloPlurijetImage from '@/assets/equipment-page/pedrollo-plurijet.png';
-import pedrolloJcrImage from '@/assets/equipment-page/pedrollo-jcr.png';
-import pedrollo4BlockImage from '@/assets/equipment-page/pedrollo-4block.png';
-import hydroAccumulatorsImage from '@/assets/equipment-page/hydro-accumulators.png';
+import hunterEquipmentImage from '@/assets/equipment-page/equipment-hunter.webp';
+import pedrolloPlurijetImage from '@/assets/equipment-page/pedrollo-plurijet.webp';
+import pedrolloJcrImage from '@/assets/equipment-page/pedrollo-jcr.webp';
+import pedrollo4BlockImage from '@/assets/equipment-page/pedrollo-4block.webp';
+import hydroAccumulatorsImage from '@/assets/equipment-page/hydro-accumulators.webp';
 
-import polyethylenePipesImage from '@/assets/equipment-page/polyethylene-pipes.png';
-import compressionFittingsImage from '@/assets/equipment-page/compression-fittings.png';
-import clampsImage from '@/assets/equipment-page/clamps.png';
-import threadedConnectionsImage from '@/assets/equipment-page/threaded-connections.png';
-import plasticWellsImage from '@/assets/equipment-page/plastic-wells.png';
+import polyethylenePipesImage from '@/assets/equipment-page/polyethylene-pipes.webp';
+import compressionFittingsImage from '@/assets/equipment-page/compression-fittings.webp';
+import clampsImage from '@/assets/equipment-page/clamps.webp';
+import threadedConnectionsImage from '@/assets/equipment-page/threaded-connections.webp';
+import plasticWellsImage from '@/assets/equipment-page/plastic-wells.webp';
 
-import qualityIcon from '@/assets/equipment-page/quality-icon.png';
-import reliabilityIcon from '@/assets/equipment-page/reliability-icon.png';
-import durabilityIcon from '@/assets/equipment-page/durability-icon.png';
-import installIcon from '@/assets/equipment-page/install-icon.png';
-import compatibilityIcon from '@/assets/equipment-page/compatibility-icon.png';
+import qualityIcon from '@/assets/equipment-page/quality-icon.webp';
+import reliabilityIcon from '@/assets/equipment-page/reliability-icon.webp';
+import durabilityIcon from '@/assets/equipment-page/durability-icon.webp';
+import installIcon from '@/assets/equipment-page/install-icon.webp';
+import compatibilityIcon from '@/assets/equipment-page/compatibility-icon.webp';
 
 const mainEquipment = [
     {

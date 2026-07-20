@@ -12,6 +12,7 @@ import { ProductPage } from '@/pages/product';
 
 import { ScrollToTop } from './ScrollToTop';
 import { SearchTarget } from '@/features/site-search/SearchTarget';
+import { RouteSeo } from '@/app/seo/RouteSeo';
 
 import { DefaultLayout } from "@/widgets/layouts/default-layout";
 import { HomeLayout } from "@/widgets/layouts/home-layout";
@@ -19,10 +20,12 @@ import { HomeLayout } from "@/widgets/layouts/home-layout";
 export function AppRouter() {
     return (
         <BrowserRouter>
+            <RouteSeo />
             <ScrollToTop />
             <SearchTarget />
             <Routes>
                 <Route element={ <HomeLayout/> } > 
+                    <Route path="/" element={ <HomePage/>} />
                     <Route path="/home" element={ <HomePage /> }/>
                     <Route path="/about" element={ <HomePage/>}/>
                 </Route>

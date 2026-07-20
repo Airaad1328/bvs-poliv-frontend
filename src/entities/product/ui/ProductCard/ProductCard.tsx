@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 
-import priceIcon from '@/assets/catalog-page/price-icon.png';
+import priceIcon from '@/assets/catalog-page/price-icon.webp';
 
 import { formatProductPrice } from '../../lib/formatProductPrice';
 import type { Product } from '../../model/types';
