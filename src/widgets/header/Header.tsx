@@ -5,7 +5,7 @@ import { MobileMenu } from "./MobileMenu";
 
 import styles from "./Header.module.css";
 
-import search_icon from "@/assets/search_icon.png"
+import search_icon from "@/assets/search_icon.webp"
 import { searchSite, type SearchItem } from "@/features/site-search/siteSearch";
 
 type HeaderVariant = "home" | "default";
@@ -86,7 +86,7 @@ export function Header({ variant = "default" }: HeaderProps) {
             <span />
           </button>
 
-        <Link className={styles.logoLink} to="/home">ТОВ БВС-ПОЛИВ</Link>
+        <Link className={styles.logoLink} to="/">ТОВ БВС-ПОЛИВ</Link>
 
         <nav className={styles.nav}>
 

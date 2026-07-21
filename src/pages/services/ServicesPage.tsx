@@ -1,27 +1,27 @@
 import styles from './ServicesPage.module.css';
 
-import servicesHeroImage from '@/assets/services-page/services-hero.png';
+import servicesHeroImage from '@/assets/services-page/services-hero.webp';
 
-import serviceIrrigationImage from '@/assets/services-page/service-irrigation.png';
-import servicePondImage from '@/assets/services-page/service-pond.png';
-import serviceRolledLawnImage from '@/assets/services-page/service-rolled-lawn.png';
-import serviceMowingImage from '@/assets/services-page/service-mowing.png';
+import serviceIrrigationImage from '@/assets/services-page/service-irrigation.webp';
+import servicePondImage from '@/assets/services-page/service-pond.webp';
+import serviceRolledLawnImage from '@/assets/services-page/service-rolled-lawn.webp';
+import serviceMowingImage from '@/assets/services-page/service-mowing.webp';
 
-import pondFishImage from '@/assets/services-page/pond-fish.png';
-import pondSchemeImage from '@/assets/services-page/pond-scheme.png';
+import pondFishImage from '@/assets/services-page/pond-fish.webp';
+import pondSchemeImage from '@/assets/services-page/pond-scheme.webp';
 
-import lawnInstallationImage from '@/assets/services-page/lawn-installation.png';
-import lawnRollsImage from '@/assets/services-page/lawn-rolls.png';
-import lawnLayingWorkImage from '@/assets/services-page/lawn-laying-work.png';
+import lawnInstallationImage from '@/assets/services-page/lawn-installation.webp';
+import lawnRollsImage from '@/assets/services-page/lawn-rolls.webp';
+import lawnLayingWorkImage from '@/assets/services-page/lawn-laying-work.webp';
 
-import wheelbarrowIcon from '@/assets/services-page/wheelbarrow-icon.png';
-import handPlantIcon from '@/assets/services-page/hand-plant-icon.png';
-import grassIcon from '@/assets/services-page/grass-icon.png';
-import wateringIcon from '@/assets/services-page/watering-icon.png';
-import stepArrowIcon from '@/assets/services-page/step-arrow-icon.png';
-import stepCheckIcon from '@/assets/services-page/step-check-icon.png';
+import wheelbarrowIcon from '@/assets/services-page/wheelbarrow-icon.webp';
+import handPlantIcon from '@/assets/services-page/hand-plant-icon.webp';
+import grassIcon from '@/assets/services-page/grass-icon.webp';
+import wateringIcon from '@/assets/services-page/watering-icon.webp';
+import stepArrowIcon from '@/assets/services-page/step-arrow-icon.webp';
+import stepCheckIcon from '@/assets/services-page/step-check-icon.webp';
 
-import lawnTextureImage from '@/assets/services-page/lawn-texture.png';
+import lawnTextureImage from '@/assets/services-page/lawn-texture.webp';
 
 const services = [
     {

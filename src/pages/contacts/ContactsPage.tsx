@@ -1,12 +1,11 @@
 import styles from './ContactsPage.module.css';
 
-import contactHeroImage from '@/assets/contacts-page/contact-hero.jpg';
 
-import companyIcon from '@/assets/contacts-page/company-icon.png';
-import addressIcon from '@/assets/contacts-page/address-icon.png';
-import phoneIcon from '@/assets/contacts-page/phone-icon.png';
-import mailIcon from '@/assets/contacts-page/mail-icon.png';
-import supportIcon from '@/assets/contacts-page/support-icon.png';
+import companyIcon from '@/assets/contacts-page/company-icon.webp';
+import addressIcon from '@/assets/contacts-page/address-icon.webp';
+import phoneIcon from '@/assets/contacts-page/phone-icon.webp';
+import mailIcon from '@/assets/contacts-page/mail-icon.webp';
+import supportIcon from '@/assets/contacts-page/support-icon.webp';
 
 const contacts = [
     {

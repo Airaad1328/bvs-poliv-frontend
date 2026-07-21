@@ -1,4 +1,4 @@
-import { BrowserRouter,  Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 
 import { HomePage } from "@/pages/home";
 import { AutoPolivPage } from "@/pages/auto-poliv";
@@ -18,11 +18,12 @@ import { HomeLayout } from "@/widgets/layouts/home-layout";
 
 export function AppRouter() {
     return (
-        <BrowserRouter>
+        <>
             <ScrollToTop />
             <SearchTarget />
             <Routes>
                 <Route element={ <HomeLayout/> } > 
+                    <Route path="/" element={ <HomePage/>} />
                     <Route path="/home" element={ <HomePage /> }/>
                     <Route path="/about" element={ <HomePage/>}/>
                 </Route>
@@ -38,6 +39,6 @@ export function AppRouter() {
                     <Route path="/catalog/:slug" element = {<ProductPage/>} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </>
     )
 }
