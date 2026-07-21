@@ -1,4 +1,4 @@
-import { BrowserRouter,  Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 
 import { HomePage } from "@/pages/home";
 import { AutoPolivPage } from "@/pages/auto-poliv";
@@ -12,15 +12,13 @@ import { ProductPage } from '@/pages/product';
 
 import { ScrollToTop } from './ScrollToTop';
 import { SearchTarget } from '@/features/site-search/SearchTarget';
-import { RouteSeo } from '@/app/seo/RouteSeo';
 
 import { DefaultLayout } from "@/widgets/layouts/default-layout";
 import { HomeLayout } from "@/widgets/layouts/home-layout";
 
 export function AppRouter() {
     return (
-        <BrowserRouter>
-            <RouteSeo />
+        <>
             <ScrollToTop />
             <SearchTarget />
             <Routes>
@@ -41,6 +39,6 @@ export function AppRouter() {
                     <Route path="/catalog/:slug" element = {<ProductPage/>} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </>
     )
 }

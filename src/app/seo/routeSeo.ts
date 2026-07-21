@@ -1,7 +1,6 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router';
-
 import { getProductBySlug } from '@/entities/product';
+
+export const SITE_URL = 'https://bvs-poliv.com.ua';
 
 interface SeoData {
     title: string;
@@ -70,12 +69,13 @@ const fallbackSeo: SeoData = {
     noIndex: true,
 };
 
-function getSeoData(pathname: string): SeoData {
-    const staticPage = pageSeo[pathname];
+export function getSeoData(pathname: string): SeoData {
+    const normalizedPath = pathname.replace(/\/$/, '') || '/';
+    const staticPage = pageSeo[normalizedPath];
 
     if (staticPage) return staticPage;
 
-    const productSlug = pathname.match(/^\/catalog\/([^/]+)\/?$/)?.[1];
+    const productSlug = normalizedPath.match(/^\/catalog\/([^/]+)$/)?.[1];
     const product = productSlug
         ? getProductBySlug(decodeURIComponent(productSlug))
         : undefined;
@@ -91,47 +91,6 @@ function getSeoData(pathname: string): SeoData {
     };
 }
 
-function setMeta(selector: string, attributes: Record<string, string>) {
-    let element = document.head.querySelector<HTMLMetaElement>(selector);
-
-    if (!element) {
-        element = document.createElement('meta');
-        document.head.append(element);
-    }
-
-    Object.entries(attributes).forEach(([name, value]) => {
-        element.setAttribute(name, value);
-    });
-}
-
-export function RouteSeo() {
-    const { pathname } = useLocation();
-
-    useEffect(() => {
-        const seo = getSeoData(pathname.replace(/\/$/, '') || '/');
-        const canonicalUrl = new URL(seo.canonicalPath, window.location.origin).href;
-
-        document.title = seo.title;
-        setMeta('meta[name="description"]', { name: 'description', content: seo.description });
-        setMeta('meta[name="robots"]', {
-            name: 'robots',
-            content: seo.noIndex ? 'noindex, nofollow' : 'index, follow',
-        });
-        setMeta('meta[property="og:title"]', { property: 'og:title', content: seo.title });
-        setMeta('meta[property="og:description"]', { property: 'og:description', content: seo.description });
-        setMeta('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl });
-        setMeta('meta[property="og:type"]', { property: 'og:type', content: 'website' });
-
-        let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-
-        if (!canonical) {
-            canonical = document.createElement('link');
-            canonical.rel = 'canonical';
-            document.head.append(canonical);
-        }
-
-        canonical.href = canonicalUrl;
-    }, [pathname]);
-
-    return null;
+export function getCanonicalUrl(canonicalPath: string) {
+    return new URL(canonicalPath, SITE_URL).href;
 }

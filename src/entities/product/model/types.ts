@@ -1,3 +1,5 @@
+import type { ProductSlug } from './productSlugs';
+
 export type ProductCategoryId =
     | 'rain-sensors'
     | 'solar-sensors'
@@ -19,7 +21,7 @@ export interface ProductSpecification {
 
 export interface Product {
     id: number;
-    slug: string;
+    slug: ProductSlug;
     category: ProductCategoryId;
     name: string;
     model: string;
