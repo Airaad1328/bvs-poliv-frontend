@@ -27,7 +27,9 @@ const productPages = productSlugs.map(
 export default {
   appDirectory: "src",
 
-  basename: basePath || "/",
+  basename: basePath
+    ? `${basePath}/`
+    : "/",
 
   // Никакого Node.js-сервера в production.
   ssr: false,
